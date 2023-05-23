@@ -70,7 +70,7 @@ void Neuron::updateinputweights(Layer &prevlayer){
 }
 
 
-double Neuron::eta=0.01;
+double Neuron::eta=0.05;
 double Neuron::alpha= 0.5;
 
 
@@ -83,7 +83,7 @@ double Neuron::activate(double x){
 
 double Neuron::derive(double x){
 	//derivate of tanh(x)= 1-tanh^2(x)
-	return 1.0 - x*x; //approximation
+	return 1.0 - tanh(x)*tanh(x); //approximation
 	
 }
 
@@ -161,7 +161,7 @@ void NeuralNetwork::BackProp(const std::vector<double> &targetvals){
 	//implement a recent average measurement (error to say how the NN is handilng the errors)
 	m_recentaverageerror= (m_recentaverageerror*m_recentaveragesmoothingfactor + m_error)
 							/(m_recentaveragesmoothingfactor + 1.0);
-	
+		
 	//calculate output layer gradients
 	for(unsigned n=0; n<outputlayer.size()-1;n++){
 		outputlayer[n].calcoutputgradients(targetvals[n]);
