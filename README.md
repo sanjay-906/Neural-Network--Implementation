@@ -10,7 +10,7 @@ Description:
 > - Almost accurate results after 'trainning' for 8000 epochs
 <br><br>
 
-Features yet to be implemented:
+Features yet to be implemented: (assistance required)
 > - saving the best weights and restoring them<br>
 > - Interface to test the Model<br>
 > - Automatic Visualization of Network Topology<br>
