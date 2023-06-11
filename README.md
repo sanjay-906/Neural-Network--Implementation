@@ -15,3 +15,18 @@ Features yet to be implemented: (assistance required)
 > - Interface to test the Model<br>
 > - Automatic Visualization of Network Topology<br>
 > - Model Deployment<br>
+
+<br>
+
+#### Output:<br>
+![result1](https://raw.githubusercontent.com/sanjay-906/NeuralNetwork-Implementation/main/Results/result2.png)
+
+<br>
+
+#### Output Visualized (MS Excel):<br>
+![resultvi](https://raw.githubusercontent.com/sanjay-906/NeuralNetwork-Implementation/main/Results/result2(visualized).png)
+
+<br>
+
+#### Class Design:<br>
+![class](https://raw.githubusercontent.com/sanjay-906/NeuralNetwork-Implementation/main/Results/UML%20class_page-0001.jpg)
